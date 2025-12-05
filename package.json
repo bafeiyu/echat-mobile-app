@@ -61,11 +61,11 @@
     "cross-env": "^7.0.3",
     "date-fns": "2.21.1",
     "diff": "5.0.0",
-    "expo": "~52.0.46",
+    "expo": "~52.0.47",
     "expo-application": "~6.0.2",
     "expo-auth-session": "~6.0.3",
     "expo-av": "~15.0.2",
-    "expo-build-properties": "~0.13.2",
+    "expo-build-properties": "~0.13.3",
     "expo-constants": "^17.0.8",
     "expo-file-system": "~18.0.12",
     "expo-font": "~13.0.4",
@@ -170,7 +170,9 @@
           "use-deep-compare-effect",
           "diff",
           "string.prototype.matchall",
-          "snakecase-keys"
+          "snakecase-keys",
+          "expo-av",
+          "@alantoa/lightbox"
         ],
         "listUnknownPackages": true
       }
