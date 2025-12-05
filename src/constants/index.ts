@@ -186,7 +186,8 @@ export const LANGUAGES = {
   tr: 'Turkish',
   uk: 'Ukrainian',
   vi: 'Vietnamese',
-  zh: 'Chinese',
+  zh: 'Chinese(繁體)',
+  zh_CN: 'Chinese(简体)',
 };
 
 export const URL_REGEX = {

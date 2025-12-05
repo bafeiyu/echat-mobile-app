@@ -20,8 +20,8 @@ interface SettingsState {
   pushToken: string;
 }
 const initialState: SettingsState = {
-  baseUrl: 'app.chatwoot.com',
-  installationUrl: 'https://app.chatwoot.com/',
+  baseUrl: 'chat.eyingbao.net',
+  installationUrl: 'https://chat.eyingbao.net/',
   uiFlags: {
     isSettingUrl: false,
     isUpdating: false,
