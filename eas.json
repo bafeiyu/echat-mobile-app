@@ -9,6 +9,9 @@
       "distribution": "internal"
     },
     "production": {
+      "android": {
+        "buildType": "apk"
+      },
       "autoIncrement": true
     },
     "preview": {
@@ -18,7 +21,7 @@
   "submit": {
     "production": {
       "android": {
-        "track": "internal" // (enum: production, beta, alpha, internal)
+        "track": "internal"
       }
     }
   }

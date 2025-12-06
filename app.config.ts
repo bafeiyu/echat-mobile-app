@@ -40,7 +40,14 @@ export default ({ config }: ConfigContext): ExpoConfig => {
     android: {
       adaptiveIcon: { foregroundImage: './assets/adaptive-icon.png', backgroundColor: '#ffffff' },
       package: 'com.echat.app',
-      permissions: ['android.permission.CAMERA', 'android.permission.RECORD_AUDIO'],
+      permissions: [
+        'android.permission.CAMERA',
+        'android.permission.RECORD_AUDIO',
+        'android.permission.POST_NOTIFICATIONS', // Android 13+ 通知权限
+        'android.permission.WAKE_LOCK', // 保持CPU唤醒以维持WebSocket连接
+        'android.permission.FOREGROUND_SERVICE', // 前台服务权限
+        'android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS', // 请求忽略电池优化
+      ],
       // Please use the relative path to the google-services.json file
       ...(process.env.EXPO_PUBLIC_ANDROID_GOOGLE_SERVICES_FILE && {
         googleServicesFile: process.env.EXPO_PUBLIC_ANDROID_GOOGLE_SERVICES_FILE,
